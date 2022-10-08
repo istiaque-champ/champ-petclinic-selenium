@@ -60,13 +60,18 @@ public class SeleniumBillingServiceTest {
     @Test
     @DisplayName("Test to see if the history page loads")
     public void takeBillingServiceSnapshot(TestInfo testInfo) throws Exception {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         WebElement billsTab = helper.getDriver().findElement(By.linkText("Bills"));
         billsTab.click();
 
-        WebElement billHistoryLink = helper.getDriver().findElement(By.linkText("Bills"));
-        billHistoryLink.click();
+        WebDriverWait wait = new WebDriverWait(driver, 2);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("BillHistoryTitle")));
 
-        WebElement billHistoryHeader = helper.getDriver().findElement(By.xpath("//h2[contains(., 'Bill History')]"));
+        WebElement billHistoryHeader = helper.getDriver().findElement(By.id("BillHistoryTitle"));
 
         String method = testInfo.getDisplayName();
         takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + ".png");
@@ -81,14 +86,16 @@ public class SeleniumBillingServiceTest {
     @Test
     @DisplayName("Take a snapshot of bill details page")
     public void takeBillingServiceDetailsPageSnapshot(TestInfo testInfo) throws Exception{
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         String method = testInfo.getDisplayName();
         WebElement billsTab = helper.getDriver().findElement(By.linkText("Bills"));
         billsTab.click();
 
-        WebElement billHistoryLink = helper.getDriver().findElement(By.xpath("//a[@href='#!/bills']"));
-        billHistoryLink.click();
-
-        WebDriverWait wait = new WebDriverWait(driver, 2);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bill")));
         takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\Take a snapshot to get the table data_" + System.currentTimeMillis() + ".png");
 
@@ -125,15 +132,16 @@ public class SeleniumBillingServiceTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-       helper.getDriver().findElement(By.xpath("//*[@id=\"bg\"]/div/div/div/ui-view/bill-history/form/div/input")).sendKeys("59");
+        String id = helper.getDriver().findElement(By.id("BillIdColumn")).getText();
+        helper.getDriver().findElement(By.xpath("//*[@id=\"bg\"]/div/div/div/ui-view/bill-history/form/div/input")).sendKeys(id.substring(1, 3));
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-       String id = helper.getDriver().findElement(By.xpath("//*[@id=\"billId\"]/td[3]")).getText();
+        String amount = helper.getDriver().findElement(By.xpath("//*[@id=\"billId\"]/td[4]")).getText();
 
-       assertThat(id, is("59.99"));
+       assertThat(amount, is("59.99"));
 
         helper.getDriver().quit();
     }
@@ -147,7 +155,7 @@ public class SeleniumBillingServiceTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        WebElement billsTab = helper.getDriver().findElement(By.id("navbarDropdown1"));
+        WebElement billsTab = helper.getDriver().findElement(By.linkText("Bills"));
         billsTab.click();
 
         try {
@@ -168,15 +176,18 @@ public class SeleniumBillingServiceTest {
 
         WebElement table = helper.getDriver().findElement(By.xpath("//table[@class='table table-striped']"));
         List<WebElement> rows = table.findElements(By.tagName("tr"));
-        List<WebElement> buttons = driver.findElements(By.xpath("//*[@id=\"billId\"]/td[5]/a"));
+        List<WebElement> buttons = driver.findElements(By.xpath("//*[@class='btn btn-danger']"));
         buttons.get(0).click();
+        driver.switchTo().alert().accept();
+        wait.until(ExpectedConditions.alertIsPresent());
         driver.switchTo().alert().accept();
         String method = testInfo.getDisplayName();
         takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + ".png");
 
+
         TimeUnit.SECONDS.sleep(1);
 
-        assertThat(rows.size(), is(6));
+        assertThat(rows.size(), is(11));
 
         helper.getDriver().quit();
     }
