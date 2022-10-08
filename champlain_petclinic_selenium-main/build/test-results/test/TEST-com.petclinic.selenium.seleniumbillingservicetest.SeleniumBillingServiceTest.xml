@@ -1,53 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" tests="5" skipped="0" failures="5" errors="0" timestamp="2022-10-07T22:17:29" hostname="MSI" time="0.267">
+<testsuite name="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" tests="5" skipped="0" failures="3" errors="0" timestamp="2022-10-08T00:59:32" hostname="MSI" time="19.066">
   <properties/>
-  <testcase name="Take a snapshot of bill details page" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="0.002">
-    <failure message="org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.openqa.selenium.chrome.ChromeDriver arg0] in constructor [public com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest(org.openqa.selenium.chrome.ChromeDriver)]: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x00F61ED3+2236115]&#10;&#9;Ordinal0 [0x00EF92F1+1807089]&#10;&#9;Ordinal0 [0x00E066FD+812797]&#10;&#9;Ordinal0 [0x00E2371F+931615]&#10;&#9;Ordinal0 [0x00E219C9+924105]&#10;&#9;Ordinal0 [0x00E5806C+1146988]&#10;&#9;Ordinal0 [0x00E57A6A+1145450]&#10;&#9;Ordinal0 [0x00E518A6+1120422]&#10;&#9;Ordinal0 [0x00E2A73D+960317]&#10;&#9;Ordinal0 [0x00E2B71F+964383]&#10;&#9;GetHandleVerifier [0x0120E7E2+2743074]&#10;&#9;GetHandleVerifier [0x012008D4+2685972]&#10;&#9;GetHandleVerifier [0x00FF2BAA+532202]&#10;&#9;GetHandleVerifier [0x00FF1990+527568]&#10;&#9;Ordinal0 [0x00F0080C+1837068]&#10;&#9;Ordinal0 [0x00F04CD8+1854680]&#10;&#9;Ordinal0 [0x00F04DC5+1854917]&#10;&#9;Ordinal0 [0x00F0ED64+1895780]&#10;&#9;BaseThreadInitThunk [0x75D16739+25]&#10;&#9;RtlGetFullPathName_UEx [0x77738FD2+1218]&#10;&#9;RtlGetFullPathName_UEx [0x77738F9D+1165]&#10;" type="org.junit.jupiter.api.extension.ParameterResolutionException">org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.openqa.selenium.chrome.ChromeDriver arg0] in constructor [public com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest(org.openqa.selenium.chrome.ChromeDriver)]: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+  <testcase name="Take a snapshot of bill details page" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="2.028"/>
+  <testcase name="Test to see if the history page loads" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="1.902"/>
+  <testcase name="Test a snapshot to delete the bill" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="2.887">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#navbarDropdown1&quot;}&#10;  (Session info: chrome=106.0.5249.103)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\cadie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49688}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 657db5acd94cf42754e7c335f5c7cd8c&#10;*** Element info: {Using=id, value=navbarDropdown1}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#navbarDropdown1&quot;}
+  (Session info: chrome=106.0.5249.103)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:239)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameters(ExecutableInvoker.java:183)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:74)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestClassConstructor(ClassBasedTestDescriptor.java:355)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateTestClass(ClassBasedTestDescriptor.java:302)
-	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateTestClass(ClassTestDescriptor.java:79)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:280)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\cadie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49688}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 657db5acd94cf42754e7c335f5c7cd8c
+*** Element info: {Using=id, value=navbarDropdown1}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest.takeBillingServiceDelete(SeleniumBillingServiceTest.java:177)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
@@ -107,144 +119,46 @@ remote stacktrace: Backtrace:
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: io.github.bonigarcia.seljup.SeleniumJupiterException: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at io.github.bonigarcia.seljup.handler.DriverHandler.handleException(DriverHandler.java:104)
-	at io.github.bonigarcia.seljup.handler.ChromeDriverHandler.resolve(ChromeDriverHandler.java:78)
-	at io.github.bonigarcia.seljup.SeleniumExtension.resolveHandler(SeleniumExtension.java:310)
-	at io.github.bonigarcia.seljup.SeleniumExtension.resolveParameter(SeleniumExtension.java:223)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:216)
-	... 77 more
-Caused by: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at io.github.bonigarcia.seljup.handler.ChromeDriverHandler.resolve(ChromeDriverHandler.java:76)
-	... 80 more
 </failure>
   </testcase>
-  <testcase name="Test to see if the history page loads" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="0.0">
-    <failure message="org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.openqa.selenium.chrome.ChromeDriver arg0] in constructor [public com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest(org.openqa.selenium.chrome.ChromeDriver)]: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x00F61ED3+2236115]&#10;&#9;Ordinal0 [0x00EF92F1+1807089]&#10;&#9;Ordinal0 [0x00E066FD+812797]&#10;&#9;Ordinal0 [0x00E2371F+931615]&#10;&#9;Ordinal0 [0x00E219C9+924105]&#10;&#9;Ordinal0 [0x00E5806C+1146988]&#10;&#9;Ordinal0 [0x00E57A6A+1145450]&#10;&#9;Ordinal0 [0x00E518A6+1120422]&#10;&#9;Ordinal0 [0x00E2A73D+960317]&#10;&#9;Ordinal0 [0x00E2B71F+964383]&#10;&#9;GetHandleVerifier [0x0120E7E2+2743074]&#10;&#9;GetHandleVerifier [0x012008D4+2685972]&#10;&#9;GetHandleVerifier [0x00FF2BAA+532202]&#10;&#9;GetHandleVerifier [0x00FF1990+527568]&#10;&#9;Ordinal0 [0x00F0080C+1837068]&#10;&#9;Ordinal0 [0x00F04CD8+1854680]&#10;&#9;Ordinal0 [0x00F04DC5+1854917]&#10;&#9;Ordinal0 [0x00F0ED64+1895780]&#10;&#9;BaseThreadInitThunk [0x75D16739+25]&#10;&#9;RtlGetFullPathName_UEx [0x77738FD2+1218]&#10;&#9;RtlGetFullPathName_UEx [0x77738F9D+1165]&#10;" type="org.junit.jupiter.api.extension.ParameterResolutionException">org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.openqa.selenium.chrome.ChromeDriver arg0] in constructor [public com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest(org.openqa.selenium.chrome.ChromeDriver)]: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:239)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameters(ExecutableInvoker.java:183)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:74)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestClassConstructor(ClassBasedTestDescriptor.java:355)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateTestClass(ClassBasedTestDescriptor.java:302)
-	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateTestClass(ClassTestDescriptor.java:79)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:280)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+  <testcase name="Take a snapshot after search bar" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="6.865">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: is &quot;59.99&quot;&#13;&#10;     but: was &quot;Examinations&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is &quot;59.99&quot;
+     but: was &quot;Examinations&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest.takeBillingServiceHistoryPageSearchBarSnapShot(SeleniumBillingServiceTest.java:163)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
@@ -304,144 +218,46 @@ remote stacktrace: Backtrace:
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: io.github.bonigarcia.seljup.SeleniumJupiterException: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at io.github.bonigarcia.seljup.handler.DriverHandler.handleException(DriverHandler.java:104)
-	at io.github.bonigarcia.seljup.handler.ChromeDriverHandler.resolve(ChromeDriverHandler.java:78)
-	at io.github.bonigarcia.seljup.SeleniumExtension.resolveHandler(SeleniumExtension.java:310)
-	at io.github.bonigarcia.seljup.SeleniumExtension.resolveParameter(SeleniumExtension.java:223)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:216)
-	... 77 more
-Caused by: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at io.github.bonigarcia.seljup.handler.ChromeDriverHandler.resolve(ChromeDriverHandler.java:76)
-	... 80 more
 </failure>
   </testcase>
-  <testcase name="Test a snapshot to delete the bill" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="0.0">
-    <failure message="org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.openqa.selenium.chrome.ChromeDriver arg0] in constructor [public com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest(org.openqa.selenium.chrome.ChromeDriver)]: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x00F61ED3+2236115]&#10;&#9;Ordinal0 [0x00EF92F1+1807089]&#10;&#9;Ordinal0 [0x00E066FD+812797]&#10;&#9;Ordinal0 [0x00E2371F+931615]&#10;&#9;Ordinal0 [0x00E219C9+924105]&#10;&#9;Ordinal0 [0x00E5806C+1146988]&#10;&#9;Ordinal0 [0x00E57A6A+1145450]&#10;&#9;Ordinal0 [0x00E518A6+1120422]&#10;&#9;Ordinal0 [0x00E2A73D+960317]&#10;&#9;Ordinal0 [0x00E2B71F+964383]&#10;&#9;GetHandleVerifier [0x0120E7E2+2743074]&#10;&#9;GetHandleVerifier [0x012008D4+2685972]&#10;&#9;GetHandleVerifier [0x00FF2BAA+532202]&#10;&#9;GetHandleVerifier [0x00FF1990+527568]&#10;&#9;Ordinal0 [0x00F0080C+1837068]&#10;&#9;Ordinal0 [0x00F04CD8+1854680]&#10;&#9;Ordinal0 [0x00F04DC5+1854917]&#10;&#9;Ordinal0 [0x00F0ED64+1895780]&#10;&#9;BaseThreadInitThunk [0x75D16739+25]&#10;&#9;RtlGetFullPathName_UEx [0x77738FD2+1218]&#10;&#9;RtlGetFullPathName_UEx [0x77738F9D+1165]&#10;" type="org.junit.jupiter.api.extension.ParameterResolutionException">org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.openqa.selenium.chrome.ChromeDriver arg0] in constructor [public com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest(org.openqa.selenium.chrome.ChromeDriver)]: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:239)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameters(ExecutableInvoker.java:183)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:74)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestClassConstructor(ClassBasedTestDescriptor.java:355)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateTestClass(ClassBasedTestDescriptor.java:302)
-	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateTestClass(ClassTestDescriptor.java:79)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:280)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+  <testcase name="Test a snapshot to get the table data" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="3.072">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: is &lt;11&gt;&#13;&#10;     but: was &lt;21&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is &lt;11&gt;
+     but: was &lt;21&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest.takeBillingServiceHistoryPageSnapshot(SeleniumBillingServiceTest.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
@@ -501,615 +317,43 @@ remote stacktrace: Backtrace:
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: io.github.bonigarcia.seljup.SeleniumJupiterException: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at io.github.bonigarcia.seljup.handler.DriverHandler.handleException(DriverHandler.java:104)
-	at io.github.bonigarcia.seljup.handler.ChromeDriverHandler.resolve(ChromeDriverHandler.java:78)
-	at io.github.bonigarcia.seljup.SeleniumExtension.resolveHandler(SeleniumExtension.java:310)
-	at io.github.bonigarcia.seljup.SeleniumExtension.resolveParameter(SeleniumExtension.java:223)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:216)
-	... 77 more
-Caused by: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at io.github.bonigarcia.seljup.handler.ChromeDriverHandler.resolve(ChromeDriverHandler.java:76)
-	... 80 more
 </failure>
   </testcase>
-  <testcase name="Take a snapshot after search bar" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="0.001">
-    <failure message="org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.openqa.selenium.chrome.ChromeDriver arg0] in constructor [public com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest(org.openqa.selenium.chrome.ChromeDriver)]: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x00F61ED3+2236115]&#10;&#9;Ordinal0 [0x00EF92F1+1807089]&#10;&#9;Ordinal0 [0x00E066FD+812797]&#10;&#9;Ordinal0 [0x00E2371F+931615]&#10;&#9;Ordinal0 [0x00E219C9+924105]&#10;&#9;Ordinal0 [0x00E5806C+1146988]&#10;&#9;Ordinal0 [0x00E57A6A+1145450]&#10;&#9;Ordinal0 [0x00E518A6+1120422]&#10;&#9;Ordinal0 [0x00E2A73D+960317]&#10;&#9;Ordinal0 [0x00E2B71F+964383]&#10;&#9;GetHandleVerifier [0x0120E7E2+2743074]&#10;&#9;GetHandleVerifier [0x012008D4+2685972]&#10;&#9;GetHandleVerifier [0x00FF2BAA+532202]&#10;&#9;GetHandleVerifier [0x00FF1990+527568]&#10;&#9;Ordinal0 [0x00F0080C+1837068]&#10;&#9;Ordinal0 [0x00F04CD8+1854680]&#10;&#9;Ordinal0 [0x00F04DC5+1854917]&#10;&#9;Ordinal0 [0x00F0ED64+1895780]&#10;&#9;BaseThreadInitThunk [0x75D16739+25]&#10;&#9;RtlGetFullPathName_UEx [0x77738FD2+1218]&#10;&#9;RtlGetFullPathName_UEx [0x77738F9D+1165]&#10;" type="org.junit.jupiter.api.extension.ParameterResolutionException">org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.openqa.selenium.chrome.ChromeDriver arg0] in constructor [public com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest(org.openqa.selenium.chrome.ChromeDriver)]: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:239)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameters(ExecutableInvoker.java:183)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:74)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestClassConstructor(ClassBasedTestDescriptor.java:355)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateTestClass(ClassBasedTestDescriptor.java:302)
-	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateTestClass(ClassTestDescriptor.java:79)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:280)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: io.github.bonigarcia.seljup.SeleniumJupiterException: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at io.github.bonigarcia.seljup.handler.DriverHandler.handleException(DriverHandler.java:104)
-	at io.github.bonigarcia.seljup.handler.ChromeDriverHandler.resolve(ChromeDriverHandler.java:78)
-	at io.github.bonigarcia.seljup.SeleniumExtension.resolveHandler(SeleniumExtension.java:310)
-	at io.github.bonigarcia.seljup.SeleniumExtension.resolveParameter(SeleniumExtension.java:223)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:216)
-	... 77 more
-Caused by: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at io.github.bonigarcia.seljup.handler.ChromeDriverHandler.resolve(ChromeDriverHandler.java:76)
-	... 80 more
-</failure>
-  </testcase>
-  <testcase name="Test a snapshot to get the table data" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="0.0">
-    <failure message="org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.openqa.selenium.chrome.ChromeDriver arg0] in constructor [public com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest(org.openqa.selenium.chrome.ChromeDriver)]: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x00F61ED3+2236115]&#10;&#9;Ordinal0 [0x00EF92F1+1807089]&#10;&#9;Ordinal0 [0x00E066FD+812797]&#10;&#9;Ordinal0 [0x00E2371F+931615]&#10;&#9;Ordinal0 [0x00E219C9+924105]&#10;&#9;Ordinal0 [0x00E5806C+1146988]&#10;&#9;Ordinal0 [0x00E57A6A+1145450]&#10;&#9;Ordinal0 [0x00E518A6+1120422]&#10;&#9;Ordinal0 [0x00E2A73D+960317]&#10;&#9;Ordinal0 [0x00E2B71F+964383]&#10;&#9;GetHandleVerifier [0x0120E7E2+2743074]&#10;&#9;GetHandleVerifier [0x012008D4+2685972]&#10;&#9;GetHandleVerifier [0x00FF2BAA+532202]&#10;&#9;GetHandleVerifier [0x00FF1990+527568]&#10;&#9;Ordinal0 [0x00F0080C+1837068]&#10;&#9;Ordinal0 [0x00F04CD8+1854680]&#10;&#9;Ordinal0 [0x00F04DC5+1854917]&#10;&#9;Ordinal0 [0x00F0ED64+1895780]&#10;&#9;BaseThreadInitThunk [0x75D16739+25]&#10;&#9;RtlGetFullPathName_UEx [0x77738FD2+1218]&#10;&#9;RtlGetFullPathName_UEx [0x77738F9D+1165]&#10;" type="org.junit.jupiter.api.extension.ParameterResolutionException">org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.openqa.selenium.chrome.ChromeDriver arg0] in constructor [public com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest(org.openqa.selenium.chrome.ChromeDriver)]: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:239)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameters(ExecutableInvoker.java:183)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:74)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestClassConstructor(ClassBasedTestDescriptor.java:355)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateTestClass(ClassBasedTestDescriptor.java:302)
-	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateTestClass(ClassTestDescriptor.java:79)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:280)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: io.github.bonigarcia.seljup.SeleniumJupiterException: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at io.github.bonigarcia.seljup.handler.DriverHandler.handleException(DriverHandler.java:104)
-	at io.github.bonigarcia.seljup.handler.ChromeDriverHandler.resolve(ChromeDriverHandler.java:78)
-	at io.github.bonigarcia.seljup.SeleniumExtension.resolveHandler(SeleniumExtension.java:310)
-	at io.github.bonigarcia.seljup.SeleniumExtension.resolveParameter(SeleniumExtension.java:223)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:216)
-	... 77 more
-Caused by: org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MSI', ip: '192.168.86.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F61ED3+2236115]
-	Ordinal0 [0x00EF92F1+1807089]
-	Ordinal0 [0x00E066FD+812797]
-	Ordinal0 [0x00E2371F+931615]
-	Ordinal0 [0x00E219C9+924105]
-	Ordinal0 [0x00E5806C+1146988]
-	Ordinal0 [0x00E57A6A+1145450]
-	Ordinal0 [0x00E518A6+1120422]
-	Ordinal0 [0x00E2A73D+960317]
-	Ordinal0 [0x00E2B71F+964383]
-	GetHandleVerifier [0x0120E7E2+2743074]
-	GetHandleVerifier [0x012008D4+2685972]
-	GetHandleVerifier [0x00FF2BAA+532202]
-	GetHandleVerifier [0x00FF1990+527568]
-	Ordinal0 [0x00F0080C+1837068]
-	Ordinal0 [0x00F04CD8+1854680]
-	Ordinal0 [0x00F04DC5+1854917]
-	Ordinal0 [0x00F0ED64+1895780]
-	BaseThreadInitThunk [0x75D16739+25]
-	RtlGetFullPathName_UEx [0x77738FD2+1218]
-	RtlGetFullPathName_UEx [0x77738F9D+1165]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at io.github.bonigarcia.seljup.handler.ChromeDriverHandler.resolve(ChromeDriverHandler.java:76)
-	... 80 more
-</failure>
-  </testcase>
-  <system-out><![CDATA[18:17:28.626 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Running command on the shell: [wmic.exe, datafile, where, name='C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe', get, Version, /value]
-18:17:28.718 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Result: 
-18:17:28.718 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Running command on the shell: [wmic.exe, datafile, where, name='C:\\Users\\cadie\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe', get, Version, /value]
-18:17:28.761 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Result: 
-18:17:28.762 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Running command on the shell: [wmic.exe, datafile, where, name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', get, Version, /value]
-18:17:28.803 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Result: 
-18:17:28.803 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Chrome version not discovered using wmic... trying reading the registry
-18:17:28.803 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Running command on the shell: [REG, QUERY, HKCU\Software\Google\Chrome\BLBeacon, /v, version]
-18:17:28.819 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Result: 
-18:17:28.819 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - The driver version for Chrome is unknown ... trying with latest
-18:17:28.827 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000001: preparing request execution
-18:17:28.829 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
-18:17:28.831 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
-18:17:28.831 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000001: target auth state: UNCHALLENGED
-18:17:28.832 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000001: proxy auth state: UNCHALLENGED
-18:17:28.832 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000001: acquiring connection with route {s}->https://chromedriver.storage.googleapis.com:443
-18:17:28.832 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000001: acquiring endpoint (3 MINUTES)
-18:17:28.833 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000001: endpoint lease request (3 MINUTES) [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
-18:17:28.835 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000001: endpoint leased [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
-18:17:28.842 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000001: acquired ep-00000000
-18:17:28.842 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000001: acquired endpoint ep-00000000
-18:17:28.842 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000001: opening connection {s}->https://chromedriver.storage.googleapis.com:443
-18:17:28.842 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: connecting endpoint (30 SECONDS)
-18:17:28.842 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connecting endpoint to https://chromedriver.storage.googleapis.com:443 (30 SECONDS)
-18:17:28.917 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-0: connecting to chromedriver.storage.googleapis.com/172.217.13.112:443
-18:17:28.917 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Connecting socket to chromedriver.storage.googleapis.com/172.217.13.112:443 with timeout 30 SECONDS
-18:17:28.977 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
-18:17:28.977 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-18:17:28.977 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Starting handshake
-18:17:29.082 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Secure session established
-18:17:29.082 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
-18:17:29.082 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
-18:17:29.084 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.storage.googleapis.com
-18:17:29.084 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.storage.googleapis.com, *.googleapis.com, commondatastorage.googleapis.com, *.commondatastorage.googleapis.com, storage.googleapis.com, storage.mtls.googleapis.com, *.appspot.com.storage.googleapis.com, *.content-storage.googleapis.com, *.content-storage-p2.googleapis.com, *.content-storage-upload.googleapis.com, *.content-storage-download.googleapis.com, *.storage-upload.googleapis.com, *.storage-download.googleapis.com]
-18:17:29.084 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  issuer principal: CN=GTS CA 1C3, O=Google Trust Services LLC, C=US
-18:17:29.085 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-0: connection established 192.168.86.54:50369<->172.217.13.112:443
-18:17:29.085 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connected http-outgoing-0
-18:17:29.085 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: endpoint connected
-18:17:29.086 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000001: executing GET /LATEST_RELEASE HTTP/1.1
-18:17:29.086 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: start execution ex-00000001
-18:17:29.086 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: executing exchange ex-00000001 over http-outgoing-0
-18:17:29.086 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /LATEST_RELEASE HTTP/1.1
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> accept-encoding: gzip, deflate, br
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> cache-control: max-age=0
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: chromedriver.storage.googleapis.com
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "GET /LATEST_RELEASE HTTP/1.1[\r][\n]"
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Host: chromedriver.storage.googleapis.com[\r][\n]"
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
-18:17:29.087 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-GUploader-UploadID: ADPycdvR-lxWs2AOGqnDkxzW2qD_TZ3uFyi_TrSWLTdfP_760xfXeF-5Hn0vLLx80QLc09s7OYlp2ZRnShoJbYhMIrgaqmfRDg6A[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "x-goog-generation: 1664364896958778[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "x-goog-metageneration: 1[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "x-goog-stored-content-encoding: identity[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "x-goog-stored-content-length: 13[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "x-goog-hash: crc32c=wux8zg==[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "x-goog-hash: md5=6nlQ/K7XYRMHoDDlFgLXeg==[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "x-goog-storage-class: STANDARD[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Length: 13[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Server: UploadServer[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Date: Fri, 07 Oct 2022 21:18:16 GMT[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Expires: Fri, 07 Oct 2022 22:18:16 GMT[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Cache-Control: public, max-age=3600[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Age: 3553[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Last-Modified: Wed, 28 Sep 2022 11:34:57 GMT[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "ETag: "ea7950fcaed7611307a030e51602d77a"[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Type: text/plain[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[\r][\n]"
-18:17:29.108 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "106.0.5249.61"
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-GUploader-UploadID: ADPycdvR-lxWs2AOGqnDkxzW2qD_TZ3uFyi_TrSWLTdfP_760xfXeF-5Hn0vLLx80QLc09s7OYlp2ZRnShoJbYhMIrgaqmfRDg6A
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << x-goog-generation: 1664364896958778
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << x-goog-metageneration: 1
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << x-goog-stored-content-encoding: identity
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << x-goog-stored-content-length: 13
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << x-goog-hash: crc32c=wux8zg==
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << x-goog-hash: md5=6nlQ/K7XYRMHoDDlFgLXeg==
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << x-goog-storage-class: STANDARD
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Accept-Ranges: bytes
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 13
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Server: UploadServer
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Fri, 07 Oct 2022 21:18:16 GMT
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Expires: Fri, 07 Oct 2022 22:18:16 GMT
-18:17:29.111 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Cache-Control: public, max-age=3600
-18:17:29.112 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Age: 3553
-18:17:29.112 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Last-Modified: Wed, 28 Sep 2022 11:34:57 GMT
-18:17:29.112 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << ETag: "ea7950fcaed7611307a030e51602d77a"
-18:17:29.112 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: text/plain
-18:17:29.112 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
-18:17:29.113 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000001: connection can be kept alive for 3 MINUTES
-18:17:29.115 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: releasing valid endpoint
-18:17:29.115 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: releasing endpoint
-18:17:29.115 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connection http-outgoing-0 can be kept alive for 3 MINUTES
-18:17:29.115 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connection released [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
-18:17:29.116 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.VersionDetector - Latest version of chromedriver according to https://chromedriver.storage.googleapis.com/LATEST_RELEASE is 106.0.5249.61
-18:17:29.124 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 106.0.5249.61 found in cache
-18:17:29.124 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\cadie\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+  <system-out><![CDATA[20:59:31.381 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=106 in cache (valid until 21:38:09 07/10/2022 HAE)
+20:59:31.387 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome106=106.0.5249.61 in cache (valid until 18:24:22 08/10/2022 HAE)
+20:59:31.387 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+20:59:31.396 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 106.0.5249.61 found in cache
+20:59:31.396 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\cadie\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 43042
+  <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 29347
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 40262
+oct. 07, 2022 8:59:32 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 64201
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 53626
+oct. 07, 2022 8:59:34 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 38604
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 5678
+oct. 07, 2022 8:59:37 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 14339
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 22397
+oct. 07, 2022 8:59:40 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 10304
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
+oct. 07, 2022 8:59:48 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
