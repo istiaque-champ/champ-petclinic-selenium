@@ -79,35 +79,9 @@ public class SeleniumBillingServiceTest {
     }
 
     @Test
-    @DisplayName("Test a snapshot to get the table data")
-    public void takeBillingServiceHistoryPageSnapshot(TestInfo testInfo) throws Exception {
-        TimeUnit.SECONDS.sleep(1);
-
-        WebElement billsTab = helper.getDriver().findElement(By.linkText("Bills"));
-        billsTab.click();
-
-        WebElement billHistoryLink = helper.getDriver().findElement(By.xpath("//a[@href='#!/bills']"));
-        billHistoryLink.click();
-
-        WebDriverWait wait = new WebDriverWait(driver,2);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@class='table table-striped']")));
-
-        WebElement table = helper.getDriver().findElement(By.xpath("//table[@class='table table-striped']"));
-        List<WebElement> rows = table.findElements(By.tagName("tr"));
-
-        String method = testInfo.getDisplayName();
-        takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + ".png");
-
-        TimeUnit.SECONDS.sleep(1);
-
-        assertThat(rows.size(), is(11));
-
-        helper.getDriver().quit();
-    }
-
-    @Test
     @DisplayName("Take a snapshot of bill details page")
     public void takeBillingServiceDetailsPageSnapshot(TestInfo testInfo) throws Exception{
+        String method = testInfo.getDisplayName();
         WebElement billsTab = helper.getDriver().findElement(By.linkText("Bills"));
         billsTab.click();
 
@@ -116,6 +90,7 @@ public class SeleniumBillingServiceTest {
 
         WebDriverWait wait = new WebDriverWait(driver, 2);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bill")));
+        takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\Take a snapshot to get the table data_" + System.currentTimeMillis() + ".png");
 
         WebElement billDetailsLink = helper.getDriver().findElement(By.linkText("Get Details"));
         billDetailsLink.click();
@@ -125,7 +100,6 @@ public class SeleniumBillingServiceTest {
 
         WebElement billIDDetail = helper.getDriver().findElement(By.id("BillDetailsTitle"));
 
-        String method = testInfo.getDisplayName();
         takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + ".png");
 
         TimeUnit.SECONDS.sleep(1);
@@ -136,7 +110,7 @@ public class SeleniumBillingServiceTest {
 
     }
   
-  @Test
+    @Test
     @DisplayName("Take a snapshot after search bar")
     public void takeBillingServiceHistoryPageSearchBarSnapShot(){
         try {
