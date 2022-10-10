@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-10-08T02:06:20" hostname="MSI" time="25.555">
+  <properties/>
+  <testcase name="Take a snapshot of bill details page" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="4.24"/>
+  <testcase name="Test to see if the history page loads" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="4.102"/>
+  <testcase name="Test a snapshot to delete the bill" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="8.638"/>
+  <testcase name="Take a snapshot after search bar" classname="com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest" time="6.816"/>
+  <system-out><![CDATA[22:06:19.850 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=106 in cache (valid until 22:38:22 07/10/2022 HAE)
+22:06:19.854 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome106=106.0.5249.61 in cache (valid until 18:24:22 08/10/2022 HAE)
+22:06:19.855 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+22:06:19.865 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 106.0.5249.61 found in cache
+22:06:19.865 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\cadie\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 13193
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+oct. 07, 2022 10:06:20 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 40470
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+oct. 07, 2022 10:06:25 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 13518
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+oct. 07, 2022 10:06:30 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 31120
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+oct. 07, 2022 10:06:39 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+</testsuite>
