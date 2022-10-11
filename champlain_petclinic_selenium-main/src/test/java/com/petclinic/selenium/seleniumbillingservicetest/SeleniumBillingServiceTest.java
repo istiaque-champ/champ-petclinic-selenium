@@ -10,6 +10,7 @@ import org.junit.jupiter.api.TestInfo;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -85,7 +86,7 @@ public class SeleniumBillingServiceTest {
 
     @Test
     @DisplayName("Take a snapshot of bill details page")
-    public void takeBillingServiceDetailsPageSnapshot(TestInfo testInfo) throws Exception{
+    public void takeBillingServiceDetailsPageSnapshot(TestInfo testInfo) throws Exception {
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -102,7 +103,7 @@ public class SeleniumBillingServiceTest {
         WebElement billDetailsLink = helper.getDriver().findElement(By.linkText("Get Details"));
         billDetailsLink.click();
 
-        WebDriverWait waitDetails = new WebDriverWait(driver,2);
+        WebDriverWait waitDetails = new WebDriverWait(driver, 2);
         waitDetails.until(ExpectedConditions.visibilityOfElementLocated(By.id("BillDetailsTitle")));
 
         WebElement billIDDetail = helper.getDriver().findElement(By.id("BillDetailsTitle"));
@@ -116,10 +117,10 @@ public class SeleniumBillingServiceTest {
         helper.getDriver().quit();
 
     }
-  
+
     @Test
     @DisplayName("Take a snapshot after search bar")
-    public void takeBillingServiceHistoryPageSearchBarSnapShot(){
+    public void takeBillingServiceHistoryPageSearchBarSnapShot() {
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -141,13 +142,12 @@ public class SeleniumBillingServiceTest {
         }
         String amount = helper.getDriver().findElement(By.xpath("//*[@id=\"billId\"]/td[4]")).getText();
 
-       assertThat(amount, is("59.99"));
+        assertThat(amount, is("59.99"));
 
         helper.getDriver().quit();
     }
-  
 
-@Test
+    @Test
     @DisplayName("Test a snapshot to delete the bill")
     public void takeBillingServiceDelete(TestInfo testInfo) throws Exception {
         try {
@@ -171,7 +171,7 @@ public class SeleniumBillingServiceTest {
             e.printStackTrace();
         }
 
-        WebDriverWait wait = new WebDriverWait(driver,2);
+        WebDriverWait wait = new WebDriverWait(driver, 2);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@class='table table-striped']")));
 
         WebElement table = helper.getDriver().findElement(By.xpath("//table[@class='table table-striped']"));
@@ -187,8 +187,23 @@ public class SeleniumBillingServiceTest {
 
         TimeUnit.SECONDS.sleep(1);
 
-        assertThat(rows.size(), is(11));
-
         helper.getDriver().quit();
+    }
+
+    @Test
+    @DisplayName("Take a snapshot of information hover")
+    public void takeBillingServiceInfoHoverSnapshot(TestInfo testInfo) throws Exception {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        WebElement ownerName = helper.getDriver().findElement(By.id("ownerName"));
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(ownerName).perform();
+
+        String method = testInfo.getDisplayName();
+        takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + ".png");
     }
 }
