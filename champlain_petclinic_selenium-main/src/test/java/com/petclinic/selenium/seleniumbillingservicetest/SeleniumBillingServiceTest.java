@@ -99,7 +99,7 @@ public class SeleniumBillingServiceTest {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bill")));
         takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\Take a snapshot to get the table data_" + System.currentTimeMillis() + ".png");
-
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bill")));
         WebElement billDetailsLink = helper.getDriver().findElement(By.linkText("Get Details"));
         billDetailsLink.click();
 
@@ -198,6 +198,13 @@ public class SeleniumBillingServiceTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        WebElement billsTab = helper.getDriver().findElement(By.linkText("Bills"));
+        billsTab.click();
+
+        WebDriverWait wait = new WebDriverWait(driver, 2);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ownerName")));
+
         WebElement ownerName = helper.getDriver().findElement(By.id("ownerName"));
 
         Actions actions = new Actions(driver);
