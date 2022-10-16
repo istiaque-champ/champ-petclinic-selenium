@@ -113,6 +113,14 @@ public class SeleniumBillingServiceTest {
 
         assertThat(billIDDetail, not("Bill Details: "));
 
+        WebElement visitTypeInput = helper.getDriver().findElement(By.id("BillType"));
+        visitTypeInput.sendKeys("Injury");
+
+        WebElement saveButton = helper.getDriver().findElement(By.id("saveBillButton"));
+        saveButton.click();
+
+        takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + "Take a Snapshot of Update Bill" + "_" + System.currentTimeMillis() + ".png");
+
         helper.getDriver().quit();
 
     }
