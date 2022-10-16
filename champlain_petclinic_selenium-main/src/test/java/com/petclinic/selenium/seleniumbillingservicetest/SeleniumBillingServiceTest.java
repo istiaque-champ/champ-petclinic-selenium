@@ -113,6 +113,14 @@ public class SeleniumBillingServiceTest {
 
         assertThat(billIDDetail, not("Bill Details: "));
 
+        WebElement visitTypeInput = helper.getDriver().findElement(By.id("BillType"));
+        visitTypeInput.sendKeys("Injury");
+
+        WebElement saveButton = helper.getDriver().findElement(By.id("saveBillButton"));
+        saveButton.click();
+
+        takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + "Take a Snapshot of Update Bill" + "_" + System.currentTimeMillis() + ".png");
+
         helper.getDriver().quit();
 
     }
@@ -202,7 +210,7 @@ public class SeleniumBillingServiceTest {
         billsTab.click();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bill")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("TableBill")));
         WebElement billDetailsLink = helper.getDriver().findElement(By.linkText("Add A Bill"));
         billDetailsLink.click();
 
