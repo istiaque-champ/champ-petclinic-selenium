@@ -97,9 +97,9 @@ public class SeleniumBillingServiceTest {
         billsTab.click();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bill")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("TableBill")));
         takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\Take a snapshot to get the table data_" + System.currentTimeMillis() + ".png");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bill")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("TableBill")));
         WebElement billDetailsLink = helper.getDriver().findElement(By.linkText("Get Details"));
         billDetailsLink.click();
 
@@ -242,5 +242,39 @@ public class SeleniumBillingServiceTest {
 
         String method = testInfo.getDisplayName();
         takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + ".png");
+    }
+
+    @Test
+    @DisplayName("Take a snapshot of different sorting modes")
+    public void takeBillingServiceSoringSnapshots(TestInfo testInfo) throws Exception {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        //navigate to bills page
+        WebElement billsTab = helper.getDriver().findElement(By.linkText("Bills"));
+        billsTab.click();
+
+        //wait for sorting button to render & retrieve it
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("sortTestDefault1")));
+
+        WebElement sortButton = helper.getDriver().findElement(By.id("sortTestDefault1"));
+
+        //wait until page has rendered data
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Get Details")));
+
+        //click sort button & take screenshot
+        sortButton.click();
+        String method = testInfo.getDisplayName();
+        takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + "-1.png");
+
+        //get new sort button, click it & take screenshot
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("sortTestUp1")));
+        sortButton = helper.getDriver().findElement(By.id("sortTestUp1"));
+        sortButton.click();
+        takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + "-2.png");
     }
 }
