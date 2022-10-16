@@ -210,7 +210,7 @@ public class SeleniumBillingServiceTest {
         billsTab.click();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bill")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("TableBill")));
         WebElement billDetailsLink = helper.getDriver().findElement(By.linkText("Add A Bill"));
         billDetailsLink.click();
 
