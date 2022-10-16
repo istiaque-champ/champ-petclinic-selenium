@@ -103,8 +103,7 @@ public class SeleniumBillingServiceTest {
         WebElement billDetailsLink = helper.getDriver().findElement(By.linkText("Get Details"));
         billDetailsLink.click();
 
-        WebDriverWait waitDetails = new WebDriverWait(driver, 2);
-        waitDetails.until(ExpectedConditions.visibilityOfElementLocated(By.id("BillDetailsTitle")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("BillDetailsTitle")));
 
         WebElement billIDDetail = helper.getDriver().findElement(By.id("BillDetailsTitle"));
 
@@ -182,6 +181,37 @@ public class SeleniumBillingServiceTest {
         wait.until(ExpectedConditions.alertIsPresent());
         driver.switchTo().alert().accept();
         String method = testInfo.getDisplayName();
+        takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + ".png");
+
+
+        TimeUnit.SECONDS.sleep(1);
+
+        helper.getDriver().quit();
+    }
+
+    @Test
+    @DisplayName("Creating a Bill")
+    public void createBillService(TestInfo testInfo) throws Exception {
+        try {
+            Thread.sleep(2000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+        String method = testInfo.getDisplayName();
+        WebElement billsTab = helper.getDriver().findElement(By.linkText("Bills"));
+        billsTab.click();
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bill")));
+        WebElement billDetailsLink = helper.getDriver().findElement(By.linkText("Add A Bill"));
+        billDetailsLink.click();
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("BillDetailsTitle")));
+        WebElement visitTypeInput = helper.getDriver().findElement(By.id("BillType"));
+        visitTypeInput.sendKeys("Examinations");
+        WebElement saveButton = helper.getDriver().findElement(By.id("saveBillButton"));
+        saveButton.click();
+
         takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + ".png");
 
 
