@@ -97,9 +97,9 @@ public class SeleniumBillingServiceTest {
         billsTab.click();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bill")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("TableBill")));
         takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\Take a snapshot to get the table data_" + System.currentTimeMillis() + ".png");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bill")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("TableBill")));
         WebElement billDetailsLink = helper.getDriver().findElement(By.linkText("Get Details"));
         billDetailsLink.click();
 
