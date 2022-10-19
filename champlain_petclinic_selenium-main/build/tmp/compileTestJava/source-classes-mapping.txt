@@ -24,8 +24,8 @@ com/petclinic/selenium/seleniumtest/visit/CancelVisitSeleniumTest.java
  com.petclinic.selenium.seleniumtest.visit.CancelVisitSeleniumTest
 com/petclinic/selenium/seleniumtest/vets/VetsCreateSeleniumTest.java
  com.petclinic.selenium.seleniumtest.vets.VetsCreateSeleniumTest
-com/petclinic/selenium/seleniumtest/visit/CalendarUIVisitSeleniumTest.java
- com.petclinic.selenium.seleniumtest.visit.CalendarUIVisitSeleniumTest
+com/petclinic/selenium/seleniumbillingservicetest/SeleniumBillingServiceTest.java
+ com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest
 com/petclinic/selenium/seleniumtest/vets/VetsFilterSeleniumTest.java
  com.petclinic.selenium.seleniumtest.vets.VetsFilterSeleniumTest
 com/petclinic/selenium/seleniumtest/SeleniumDemoTest.java
@@ -48,5 +48,5 @@ com/petclinic/selenium/seleniumtest/vets/VetSeleniumTableResponsivenessTest.java
  com.petclinic.selenium.seleniumtest.vets.VetSeleniumTableResponsivenessTest
 com/petclinic/selenium/seleniumtest/cust/CustDeleteOwnerSeleniumTest.java
  com.petclinic.selenium.seleniumtest.cust.CustDeleteOwnerSeleniumTest
-com/petclinic/selenium/seleniumbillingservicetest/SeleniumBillingServiceTest.java
- com.petclinic.selenium.seleniumbillingservicetest.SeleniumBillingServiceTest
+com/petclinic/selenium/seleniumtest/visit/CalendarUIVisitSeleniumTest.java
+ com.petclinic.selenium.seleniumtest.visit.CalendarUIVisitSeleniumTest

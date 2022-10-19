@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.petclinic.selenium.seleniumtest.cust.CustOwnerUpdateSeleniumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-19T15:58:56" hostname="MONSTERMSI" time="14.277">
+  <properties/>
+  <testcase name="Test_Cust_UpdateOwner" classname="com.petclinic.selenium.seleniumtest.cust.CustOwnerUpdateSeleniumTest" time="14.277"/>
+  <system-out><![CDATA[11:58:54.719 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=106 in cache (valid until 12:46:47 19/10/2022 EDT)
+11:58:54.726 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome106=106.0.5249.61 in cache (valid until 11:46:47 20/10/2022 EDT)
+11:58:54.727 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+11:58:54.744 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 106.0.5249.61 found in cache
+11:58:54.744 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\dimit\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 48207
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2022 11:58:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
