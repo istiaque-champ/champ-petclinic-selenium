@@ -114,4 +114,34 @@ public class SeleniumHomePageTest {
         helper.getDriver().quit();
     }
 
+    @Test
+    @DisplayName("Test home page owners link")
+    public void takeOwnersServiceSnapshot(TestInfo testInfo) throws Exception {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        WebElement billsLink = helper.getDriver().findElement(By.id("HomeOwnerLink"));
+        billsLink.click();
+
+        WebDriverWait wait = new WebDriverWait(driver, 2);
+
+        /* TODO: Check titles if OWNERS ever puts IDs
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("BillHistoryTitle")));
+
+        WebElement billHistoryHeader = helper.getDriver().findElement(By.id("BillHistoryTitle"));
+        */
+
+        String method = testInfo.getDisplayName();
+        takeSnapShot(helper.getDriver(), SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + ".png");
+
+        /* See above comment
+        assertThat(billHistoryHeader.getText(), is("Bill History"));
+        */
+        TimeUnit.SECONDS.sleep(1);
+
+        helper.getDriver().quit();
+    }
+
 }
