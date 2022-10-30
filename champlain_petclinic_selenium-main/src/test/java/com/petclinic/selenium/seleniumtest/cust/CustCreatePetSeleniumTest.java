@@ -63,8 +63,9 @@ public class CustCreatePetSeleniumTest {
             wait.until(ExpectedConditions.urlToBe("http://localhost:8080/#!/welcome"));
             helper.getDriver().get("http://localhost:8080/#!/owners/details/8");
             wait.until(ExpectedConditions.urlToBe("http://localhost:8080/#!/owners/details/8"));
-
+            Thread.sleep(2000);
             WebElement addPetBtn = helper.getDriver().findElement((By.xpath("//*[contains(text(),'Add New Pet')]")));
+            Thread.sleep(2000);
             addPetBtn.click();
             wait.until(ExpectedConditions.urlToBe("http://localhost:8080/#!/owners/8/pets/add-pet"));
 

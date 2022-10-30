@@ -82,7 +82,7 @@ public class CustPetDeleteSeleniumTest {
                     "Pet')]"));
             deleteButton.click();
             webDriverWait.until(ExpectedConditions.urlToBe("http://localhost:8080/#!/owners/10" +
-                    "/pets/13/delete"));
+                    "/pets/12/delete"));
             Thread.sleep(5000);
             WebElement submitButton = chromeDriver.findElement(By.xpath("//*[contains(text()," +
                     "'Submit')]"));
