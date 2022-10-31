@@ -129,7 +129,7 @@ public class CustPetUpdateSeleniumTest {
             WebElement initialName = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"bg\"]/div/div/div/ui-view/owner-details/table[2]/tbody/tr[1]/td[1]/dl[1]/dd[1]"));
             assertThat(initialName.getText(), is("Leo-Updated"));
             WebElement initialDOB = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"bg\"]/div/div/div/ui-view/owner-details/table[2]/tbody/tr[1]/td[1]/dl[1]/dd[2]"));
-            assertThat(initialDOB.getText(), is("2001-10-08"));
+            assertThat(initialDOB.getText(), is("2001 Oct 08"));
             WebElement initialPetType = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"bg\"]/div/div/div/ui-view/owner-details/table[2]/tbody/tr[1]/td[1]/dl[1]/dd[3]"));
             assertThat(initialPetType.getText(), is("cat"));
         } catch (AssertionError e3) {
