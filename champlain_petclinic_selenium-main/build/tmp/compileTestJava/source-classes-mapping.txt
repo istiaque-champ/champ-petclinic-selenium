@@ -1,7 +1,7 @@
 com/petclinic/selenium/seleniumtest/vets/VetsUpdateSeleniumTest.java
  com.petclinic.selenium.seleniumtest.vets.VetsUpdateSeleniumTest
-com/petclinic/selenium/seleniumtest/cust/CustPetDeleteSeleniumTest.java
- com.petclinic.selenium.seleniumtest.cust.CustPetDeleteSeleniumTest
+com/petclinic/selenium/seleniumtest/cust/CustCreatePetSeleniumTest.java
+ com.petclinic.selenium.seleniumtest.cust.CustCreatePetSeleniumTest
 com/petclinic/selenium/seleniumtest/vets/VetsAvailabilityTest.java
  com.petclinic.selenium.seleniumtest.vets.VetsAvailabilityTest
 com/petclinic/selenium/seleniumtest/auth/registrationSeleniumTest.java
@@ -46,5 +46,7 @@ com/petclinic/selenium/seleniumtest/cust/CustDeleteOwnerSeleniumTest.java
  com.petclinic.selenium.seleniumtest.cust.CustDeleteOwnerSeleniumTest
 com/petclinic/selenium/seleniumtest/visit/CalendarUIVisitSeleniumTest.java
  com.petclinic.selenium.seleniumtest.visit.CalendarUIVisitSeleniumTest
-com/petclinic/selenium/seleniumtest/cust/CustCreatePetSeleniumTest.java
- com.petclinic.selenium.seleniumtest.cust.CustCreatePetSeleniumTest
+com/petclinic/selenium/seleniumtest/cust/CustPetDeleteSeleniumTest.java
+ com.petclinic.selenium.seleniumtest.cust.CustPetDeleteSeleniumTest
+com/petclinic/selenium/seleniumtest/cust/CustPetUpdateSeleniumTest.java
+ com.petclinic.selenium.seleniumtest.cust.CustPetUpdateSeleniumTest
