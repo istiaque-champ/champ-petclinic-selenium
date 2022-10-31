@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.petclinic.selenium.seleniumtest.cust.CustPetDeleteSeleniumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-31T02:56:25" hostname="MAXIMEPC" time="34.433">
+  <properties/>
+  <testcase name="Test_Cust_DeletePet" classname="com.petclinic.selenium.seleniumtest.cust.CustPetDeleteSeleniumTest" time="34.433"/>
+  <system-out><![CDATA[22:56:24.029 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Removing resolution chrome=106 from cache (expired on Sun Oct 30 22:49:49 EDT 2022)
+22:56:24.038 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Running command on the shell: [wmic.exe, datafile, where, name='C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe', get, Version, /value]
+22:56:24.306 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Result: 
+22:56:24.306 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Running command on the shell: [wmic.exe, datafile, where, name='C:\\Users\\dufou\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe', get, Version, /value]
+22:56:24.419 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Result: 
+22:56:24.420 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Running command on the shell: [wmic.exe, datafile, where, name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', get, Version, /value]
+22:56:24.529 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Result: Version=106.0.5249.121
+22:56:24.531 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome106=106.0.5249.61 in cache (valid until 16:48:12 31/10/2022 EDT)
+22:56:24.531 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+22:56:24.532 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Storing resolution chrome=106 in cache (valid until 23:56:24 30/10/2022 EDT)
+22:56:24.554 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 106.0.5249.61 found in cache
+22:56:24.555 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\dufou\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 11757
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct. 30, 2022 10:56:25 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
