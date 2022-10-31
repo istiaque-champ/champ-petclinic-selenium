@@ -63,6 +63,7 @@ public class CustOwnerCreateSeleniumTest {
             wait.until(ExpectedConditions.urlToBe("http://localhost:8080/#!/welcome"));
             helper.getDriver().get("http://localhost:8080/#!/owners/new");
             wait.until(ExpectedConditions.urlToBe("http://localhost:8080/#!/owners/new"));
+            Thread.sleep(1000);
 
             WebElement inputFirstName = helper.getDriver().findElement(By.xpath("//*[@name=\"firstName\"]"));
             inputFirstName.sendKeys("John");
