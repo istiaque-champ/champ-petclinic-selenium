@@ -30,8 +30,8 @@ com/petclinic/selenium/seleniumtest/auth/loginSeleniumTest.java
  com.petclinic.selenium.seleniumtest.auth.loginSeleniumTest
 com/petclinic/selenium/seleniumtest/visit/DeleteVisitSeleniumTest.java
  com.petclinic.selenium.seleniumtest.visit.DeleteVisitSeleniumTest
-com/petclinic/selenium/seleniumtest/cust/CustOwnerCreateSeleniumTest.java
- com.petclinic.selenium.seleniumtest.cust.CustOwnerCreateSeleniumTest
+com/petclinic/selenium/seleniumtest/visit/CalendarUIVisitSeleniumTest.java
+ com.petclinic.selenium.seleniumtest.visit.CalendarUIVisitSeleniumTest
 com/petclinic/selenium/seleniumtest/vets/VetsZDeleteSeleniumTest.java
  com.petclinic.selenium.seleniumtest.vets.VetsZDeleteSeleniumTest
 com/petclinic/selenium/seleniumtest/vets/VetSeleniumVetModalUITest.java
@@ -44,9 +44,9 @@ com/petclinic/selenium/seleniumtest/cust/CustSeleniumExceptionsTest.java
  com.petclinic.selenium.seleniumtest.cust.CustSeleniumExceptionsTest
 com/petclinic/selenium/seleniumtest/cust/CustDeleteOwnerSeleniumTest.java
  com.petclinic.selenium.seleniumtest.cust.CustDeleteOwnerSeleniumTest
-com/petclinic/selenium/seleniumtest/visit/CalendarUIVisitSeleniumTest.java
- com.petclinic.selenium.seleniumtest.visit.CalendarUIVisitSeleniumTest
-com/petclinic/selenium/seleniumtest/cust/CustPetDeleteSeleniumTest.java
- com.petclinic.selenium.seleniumtest.cust.CustPetDeleteSeleniumTest
 com/petclinic/selenium/seleniumtest/cust/CustPetUpdateSeleniumTest.java
  com.petclinic.selenium.seleniumtest.cust.CustPetUpdateSeleniumTest
+com/petclinic/selenium/seleniumtest/cust/CustOwnerCreateSeleniumTest.java
+ com.petclinic.selenium.seleniumtest.cust.CustOwnerCreateSeleniumTest
+com/petclinic/selenium/seleniumtest/cust/CustPetDeleteSeleniumTest.java
+ com.petclinic.selenium.seleniumtest.cust.CustPetDeleteSeleniumTest
