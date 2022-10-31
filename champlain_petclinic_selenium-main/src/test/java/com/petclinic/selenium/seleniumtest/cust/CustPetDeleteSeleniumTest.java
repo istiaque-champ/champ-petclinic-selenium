@@ -16,8 +16,12 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+
 import java.io.File;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
@@ -90,8 +94,7 @@ public class CustPetDeleteSeleniumTest {
             Thread.sleep(5000);
 
             chromeDriver.navigate().back();
-            assertNull(chromeDriver.findElement(By.xpath("//a[@href='#!/owners/10/pets/12/delete" +
-                    "]")));
+            assertThat(chromeDriver.findElements(By.xpath("//a[@href='#!/owners/10/pets/12/delete']")).size(),is(0));
 
             takeSnapShot(chromeDriver,
                 SCREENSHOTS + "\\" + method + "_" + System.currentTimeMillis() + ".png");
