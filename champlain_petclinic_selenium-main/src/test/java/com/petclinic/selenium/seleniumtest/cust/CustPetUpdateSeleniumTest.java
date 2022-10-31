@@ -97,14 +97,14 @@ public class CustPetUpdateSeleniumTest {
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='#!/pets/1/1']")));
             loginHelper.getDriver().findElement(By.xpath("//a[@href='#!/pets/1/1']")).click();
             Thread.sleep(5000);
-            WebElement previewName = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petName\"]"));
-            assertThat(previewName.getText(), is("Leo-Updated"));
+            WebElement initialFirstName = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petName\"]"));
+            assertThat(initialFirstName.getAttribute("value"), is("Leo-Updated"));
 
-            WebElement previewAddress = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petBDay\"]"));
-            assertThat(previewAddress.getText(), is("2001-10-08"));
+            WebElement initialLastName = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petBDay\"]"));
+            assertThat(initialLastName.getAttribute("value"), is("2001-10-08"));
 
-            WebElement previewCity = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petTypeName\"]"));
-            assertThat(previewCity.getText(), is("cat"));
+            WebElement initialAddress = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petTypeName\"]"));
+            assertThat(initialAddress.getAttribute("value"), is("cat"));
         } catch (AssertionError e2) {
             e2.printStackTrace();
             error2 = true;
