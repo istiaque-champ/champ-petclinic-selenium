@@ -65,14 +65,14 @@ public class CustPetUpdateSeleniumTest {
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='#!/pets/1/1']")));
             loginHelper.getDriver().findElement(By.xpath("//a[@href='#!/pets/1/1']")).click();
             wait.until(ExpectedConditions.urlToBe("http://localhost:8080/#!/pets/1/1"));
-            Thread.sleep(5000);
+            Thread.sleep(1000);
 
             WebElement initialFirstName = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petName\"]"));
             assertThat(initialFirstName.getAttribute("value"), is("Leo"));
-            WebElement initialLastName = loginHelper.getDriver().findElement(By.xpath("//*[@name=\"petBDay\"]"));
-            assertThat(initialLastName.getAttribute("value"), is("2000-09-09"));
-            WebElement initialAddress = loginHelper.getDriver().findElement(By.xpath("//*[@name=\"petTypeName\"]"));
-            assertThat(initialAddress.getAttribute("value"), is("110 W. Liberty St."));
+            WebElement initialLastName = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petBDay\"]"));
+            assertThat(initialLastName.getAttribute("value"), is("2000-09-07"));
+            WebElement initialAddress = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petTypeName\"]"));
+            assertThat(initialAddress.getAttribute("value"), is("cat"));
         } catch (AssertionError e) {
             e.printStackTrace();
             error = true;
@@ -86,22 +86,25 @@ public class CustPetUpdateSeleniumTest {
         }
 
         try {
-            loginHelper.getDriver().findElement(By.xpath("//*[@name=\"firstName\"]")).sendKeys("-Updated");
-            loginHelper.getDriver().findElement(By.xpath("//*[@name=\"lastName\"]")).sendKeys("-Updated");
-            loginHelper.getDriver().findElement(By.xpath("//*[@name=\"address\"]")).sendKeys("-Updated");
-            loginHelper.getDriver().findElement(By.xpath("//*[@name=\"city\"]")).sendKeys("-Updated");
-            loginHelper.getDriver().findElement(By.xpath("//*[@id=\"newBtn\"]")).click();
+            loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petName\"]")).sendKeys("-Updated");
+            loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petBDay\"]")).clear();
+            loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petBDay\"]")).sendKeys("2001-10-08");
+            loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petTypeName\"]")).clear();
+            loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petTypeName\"]")).sendKeys("cat");
+            loginHelper.getDriver().findElement(By.xpath("//*[@type=\"submit\"]")).click();
 
             WebDriverWait wait = new WebDriverWait(driver, 10);
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='#!/owners/details/1']")));
-            WebElement previewName = loginHelper.getDriver().findElement(By.xpath("//td[contains(., 'George-Updated Franklin-Updated')]"));
-            assertThat(previewName.getText(), is("George-Updated Franklin-Updated"));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='#!/pets/1/1']")));
+            loginHelper.getDriver().findElement(By.xpath("//a[@href='#!/pets/1/1']")).click();
+            Thread.sleep(5000);
+            WebElement previewName = loginHelper.getDriver().findElement(By.xpath("//input[contains(., 'Leo-Updated')]"));
+            assertThat(previewName.getText(), is("Leo-Updated"));
 
-            WebElement previewAddress = loginHelper.getDriver().findElement(By.xpath("//td[contains(., '110 W. Liberty St.-Updated')]"));
-            assertThat(previewAddress.getText(), is("110 W. Liberty St.-Updated"));
+            WebElement previewAddress = loginHelper.getDriver().findElement(By.xpath("//input[contains(., '2001-10-08')]"));
+            assertThat(previewAddress.getText(), is("2001-10-08"));
 
-            WebElement previewCity = loginHelper.getDriver().findElement(By.xpath("//td[contains(., 'Madison-Updated')]"));
-            assertThat(previewCity.getText(), is("Madison-Updated"));
+            WebElement previewCity = loginHelper.getDriver().findElement(By.xpath("//input[contains(., 'cat')]"));
+            assertThat(previewCity.getText(), is("cat"));
         } catch (AssertionError e2) {
             e2.printStackTrace();
             error2 = true;
@@ -116,21 +119,18 @@ public class CustPetUpdateSeleniumTest {
 
         try {
             WebDriverWait wait = new WebDriverWait(driver, 10);
+            loginHelper.getDriver().navigate().back();
+            loginHelper.getDriver().navigate().refresh();
             loginHelper.getDriver().findElement(By.xpath("//a[@href='#!/owners/details/1']")).click();
             wait.until(ExpectedConditions.urlToBe("http://localhost:8080/#!/owners/details/1"));
-            loginHelper.getDriver().findElement(By.xpath("//*[@id=\"bg\"]/div/div/div/ui-view/owner-details/table[1]/tbody/tr[5]/td[1]/a")).click();
-            Thread.sleep(5000);
+            Thread.sleep(1000);
 
-            WebElement initialFirstName = loginHelper.getDriver().findElement(By.xpath("//*[@name=\"firstName\"]"));
-            assertThat(initialFirstName.getAttribute("value"), is("George-Updated"));
-            WebElement initialLastName = loginHelper.getDriver().findElement(By.xpath("//*[@name=\"lastName\"]"));
-            assertThat(initialLastName.getAttribute("value"), is("Franklin-Updated"));
-            WebElement initialAddress = loginHelper.getDriver().findElement(By.xpath("//*[@name=\"address\"]"));
-            assertThat(initialAddress.getAttribute("value"), is("110 W. Liberty St.-Updated"));
-            WebElement initialCity = loginHelper.getDriver().findElement(By.xpath("//*[@name=\"city\"]"));
-            assertThat(initialCity.getAttribute("value"), is("Madison-Updated"));
-            WebElement initialPhone = loginHelper.getDriver().findElement(By.xpath("//*[@name=\"telephone\"]"));
-            assertThat(initialPhone.getAttribute("value"), is("6085551023"));
+            WebElement initialName = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"bg\"]/div/div/div/ui-view/owner-details/table[2]/tbody/tr[1]/td[1]/dl[1]/dd[1]"));
+            assertThat(initialName.getAttribute("value"), is("Leo-Updated"));
+            WebElement initialDOB = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"bg\"]/div/div/div/ui-view/owner-details/table[2]/tbody/tr[1]/td[1]/dl[1]/dd[2]"));
+            assertThat(initialDOB.getAttribute("value"), is("2001-10-08"));
+            WebElement initialPetType = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"bg\"]/div/div/div/ui-view/owner-details/table[2]/tbody/tr[1]/td[1]/dl[1]/dd[3]"));
+            assertThat(initialPetType.getAttribute("value"), is("cat"));
         } catch (AssertionError e3) {
             e3.printStackTrace();
             error3 = true;
