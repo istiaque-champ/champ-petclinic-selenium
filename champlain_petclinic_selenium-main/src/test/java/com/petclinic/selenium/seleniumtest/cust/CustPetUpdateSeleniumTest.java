@@ -97,13 +97,13 @@ public class CustPetUpdateSeleniumTest {
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='#!/pets/1/1']")));
             loginHelper.getDriver().findElement(By.xpath("//a[@href='#!/pets/1/1']")).click();
             Thread.sleep(5000);
-            WebElement previewName = loginHelper.getDriver().findElement(By.xpath("//input[contains(., 'Leo-Updated')]"));
+            WebElement previewName = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petName\"]"));
             assertThat(previewName.getText(), is("Leo-Updated"));
 
-            WebElement previewAddress = loginHelper.getDriver().findElement(By.xpath("//input[contains(., '2001-10-08')]"));
+            WebElement previewAddress = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petBDay\"]"));
             assertThat(previewAddress.getText(), is("2001-10-08"));
 
-            WebElement previewCity = loginHelper.getDriver().findElement(By.xpath("//input[contains(., 'cat')]"));
+            WebElement previewCity = loginHelper.getDriver().findElement(By.xpath("//*[@id=\"petTypeName\"]"));
             assertThat(previewCity.getText(), is("cat"));
         } catch (AssertionError e2) {
             e2.printStackTrace();
