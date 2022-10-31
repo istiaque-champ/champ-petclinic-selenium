@@ -24,7 +24,7 @@ public class CustPetUpdateSeleniumTest {
 
     ChromeDriver driver;
     SeleniumLoginTestHelper loginHelper;
-    private final String SCREENSHOTS = "./src/test/onDemandCustServiceScreenshots/OwnerUpdate";
+    private final String SCREENSHOTS = "./src/test/onDemandCustServiceScreenshots/PetUpdate";
 
     public CustPetUpdateSeleniumTest(ChromeDriver driver) {
         this.driver = driver;
@@ -79,9 +79,9 @@ public class CustPetUpdateSeleniumTest {
             throw new AssertionError(e);
         } finally {
             if (!error) {
-                takeSnapShot(driver, SCREENSHOTS + "/pass/checkInitialOwnerFields_" + System.currentTimeMillis() + ".png");
+                takeSnapShot(driver, SCREENSHOTS + "/pass/checkInitialPetFields_" + System.currentTimeMillis() + ".png");
             } else {
-                takeSnapShot(driver, SCREENSHOTS + "/fail/checkInitialOwnerFields_" + System.currentTimeMillis() + ".png");
+                takeSnapShot(driver, SCREENSHOTS + "/fail/checkInitialPetFields_" + System.currentTimeMillis() + ".png");
             }
         }
 
