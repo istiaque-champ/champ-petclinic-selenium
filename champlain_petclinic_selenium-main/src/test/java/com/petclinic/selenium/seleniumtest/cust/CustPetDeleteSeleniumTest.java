@@ -90,7 +90,7 @@ public class CustPetDeleteSeleniumTest {
             Thread.sleep(5000);
 
             chromeDriver.navigate().back();
-            assertNull(chromeDriver.findElement(By.xpath("//a[@href='#!/owners/10/pets/13/delete" +
+            assertNull(chromeDriver.findElement(By.xpath("//a[@href='#!/owners/10/pets/12/delete" +
                     "]")));
 
             takeSnapShot(chromeDriver,
